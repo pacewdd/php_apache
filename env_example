@@ -4,7 +4,10 @@
 LOCAL_ENV_FILE=./.env
 
 # Edit this if you prefer another location
-LOCAL_DOCUMENT_ROOT=.
+LOCAL_DOCUMENT_ROOT=./www
+LOCAL_PHP_INI=./php_ini
+LOCAL_SITES_AVAILABLE=./sites-available
+
 
 # If you are running multiple containers, change these
 LOCAL_HTTP_PORT=80
