@@ -5,11 +5,11 @@ services:
     image: "php:8.0.9-apache"
     restart: 'no'
     ports:
-      - '${LOCAL_HTTP_PORT}:80'
+      - '80:80'
     volumes:
-      - ${LOCAL_DOCUMENT_ROOT}:/var/www
-      - ${LOCAL_PHP_INI}:/usr/local/etc/php
-      - ${LOCAL_SITES_AVAILABLE}:/etc/apache2/sites-available
+      - .:/var/www
+      - ./php_ini:/usr/local/etc/php
+      - ./sites-available:/etc/apache2/sites-available
     build:
       context: .
       dockerfile: ./Dockerfile
