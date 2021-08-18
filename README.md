@@ -21,11 +21,9 @@ Download Docker Desktop here: [https://www.docker.com/products/docker-desktop](h
 
 * Rename the unpacked folder to whatever course you are taking.  e.g. `intro_php`.  You will download and use a new version of this container for every course that requires it.
 
-* Copy the `env_example` file to `.env`.
+* The default settings in `docker-compose.yml` should work just fine, but you can edit if you need to.
 
-* The default settings in `env_example` should work just fine.  Simply save the file as `.env`
-
-* You have a `www` folder inside this folder, and an `html` folder inside that, and a `public` folder inside that.  The `html` folder is where you will create your course work, with the public folder being the course's `DocumentRoot`. 
+* You have an `html` folder inside this folder.  This is the default `DocumentRoot` for your Apache/PHP installation.   The current folder `.` is mapped to `/var/www` in the container.  If you want to modify the location of the default vhost, or add new vhosts, you can open the container CLI and add vhost configuration files in `/etc/apache2/sites-available` 
 
 * When you are ready, run the following command, inside this folder. 
 
