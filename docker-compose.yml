@@ -2,14 +2,16 @@ version: "3"
 
 services:
   httpd:
-    image: "php:8.0.9-apache"
+    image: "php:8.1.2-apache"
     restart: 'no'
     ports:
       - '80:80'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - .:/var/www
-      - ./php_ini:/usr/local/etc/php
-      - ./sites-available:/etc/apache2/sites-available
+      - ./config/sites-available:/etc/apache2/sites-available
+      - ./config/php:/usr/local/etc
     build:
       context: .
       dockerfile: ./Dockerfile
