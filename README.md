@@ -1,4 +1,4 @@
-# PACE WDD Apache2/PHP8.12 Container
+# PACE WDD Apache2/PHP8.1.2 Container
 
 This is a skeleton template for PHP courses in the PACE Web Development Diploma program.
 
