@@ -1,4 +1,4 @@
-# PACE WDD Course Template
+# PACE WDD Apache2/PHP8.12 Container
 
 This is a skeleton template for PHP courses in the PACE Web Development Diploma program.
 
@@ -6,13 +6,13 @@ Software versions:
 
 * Apache 2.4.52
 * PHP 8.1.2
-* MySQL 8.0.28
 
 ## To get started...
 
 * Download a zip file of this repository
 * Rename the folder to the name of your course.  eg: `intro_php`
 * Follow the  instructions in `code/README.md` to setup your course repository
+* You may also need the MySQL container to have a fully functioning LAMP setup.
 
 ## Xdebug Configuration for Visual Studio Code
 
