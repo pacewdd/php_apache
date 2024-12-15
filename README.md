@@ -15,7 +15,11 @@ Software versions:
 * You may also need the MySQL container to have a fully functioning LAMP setup, or you can just use SQLite.
 * To start your container, use Docker Desktop, or open a terminal in the folder and run:
 
- `docker compose up --detach`
+ ```bash
+
+    docker compose up --detach
+
+```
 
 ## Document Root
 
