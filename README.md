@@ -13,7 +13,9 @@ Software versions:
 * Rename the folder to the name of your course.  eg: `intro_php`
 * Change directory into the folder and run `docker compose build`.  Note, this can take a while depending on your setup, so relax until it's done.
 * You may also need the MySQL container to have a fully functioning LAMP setup, or you can just use SQLite.
-* To start your container, use Docker Desktop, or open a terminal in the folder and run `docker compose up --detach`
+* To start your container, use Docker Desktop, or open a terminal in the folder and run:
+
+ `docker compose up --detach`
 
 ## Document Root
 
