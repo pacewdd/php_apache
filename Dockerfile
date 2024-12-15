@@ -12,10 +12,14 @@ RUN \
       vim \
       nano \
     && docker-php-ext-install pdo_mysql \
-	&& pecl install xdebug \
-    && docker-php-ext-enable xdebug \
+	# && pecl install xdebug \
+    # && docker-php-ext-enable xdebug \
     && a2enmod rewrite \
-    && service apache2 restart
+    && service apache2 restart 
+
+WORKDIR /var/www
+
+
 
 
 

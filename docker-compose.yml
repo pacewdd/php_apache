@@ -4,10 +4,10 @@ services:
     restart: 'no'
     ports:
       - "80:80"
-      - "5173:5173"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
+      - ./root:/root
       - .:/var/www
       - ./config/sites-available:/etc/apache2/sites-available
       - ./config/php:/usr/local/etc
