@@ -1,9 +1,10 @@
 services:
   httpd:
     image: "php:8.4.1-apache"
-    restart: 'no'
+    restart: 'always'
     ports:
-      - "80:80"
+      - "8080:80" # Increment 8080 if you run more than one container
+      - "5173:5173" # used by node dev server, remove in production
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
